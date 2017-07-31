@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-07-31T13:27:41+10:00"
+    "timestamp": "2017-07-31T13:29:34+10:00"
   },
   "software": {
     "base": {
@@ -27,6 +27,11 @@
       "memory": {
         "required": 128,
         "recommended": 256
+      }
+    },
+    "scripts": {
+      "install": {
+        "content": "#!/bin/bash\r\n\r\n/home/app/jxplorer-3.3.1.2-linux-installer.run"
       }
     },
     "installed_packages": [
