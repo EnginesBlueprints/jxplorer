@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-07-31T13:29:34+10:00"
+    "timestamp": "2017-07-31T13:30:38+10:00"
   },
   "software": {
     "base": {
@@ -30,6 +30,10 @@
       }
     },
     "scripts": {
+      "start": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\n\r\nsleep 500"
+      },
       "install": {
         "content": "#!/bin/bash\r\n\r\n/home/app/jxplorer-3.3.1.2-linux-installer.run"
       }
