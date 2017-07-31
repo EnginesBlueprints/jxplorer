@@ -15,12 +15,40 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "timestamp": "2017-07-31T13:27:41+10:00"
   },
   "software": {
     "base": {
+      "name": "jxplorer",
+      "framework": "openjdk8",
       "deployment_type": "web",
-      "http_protocol": "https_and_http"
-    }
+      "http_protocol": "https_and_http",
+      "memory": {
+        "required": 128,
+        "recommended": 256
+      }
+    },
+    "installed_packages": [
+      {
+        "name": "jxplorer-3.3.1.2-linux-installer.run",
+        "source_url": "https://svwh.dl.sourceforge.net/project/jxplorer/jxplorer/version%203.3.1.2/jxplorer-3.3.1.2-linux-installer.run",
+        "destination": "./"
+      }
+    ],
+    "service_configurations": [
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "filesystem/local/filesystem",
+        "variables": {
+          "service_name": "_Engines_Builder(engine_name)",
+          "volume_src": "",
+          "engine_path": "/home/fs/persistence",
+          "permissions": "rw",
+          "user": "_Engines_Builder(data_uid)",
+          "group": "_Engines_Builder(data_gid)"
+        }
+      }
+    ]
   }
 }
